@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ICS EVENT SPACE</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eossapiente officiis modi at sunt excepturi expedita sint? Sed quibusdamrecusandae alias error harum maxime adipisci amet laborum. Perspiciatisminima nesciunt dolorem! Officiis iure rerum voluptates a cumque velitquibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus teneturfugiat, temporibus enim commodi iusto libero magni deleniti quod quamconsequuntur! Commodi minima excepturi repudiandae velit hic maximedoloremque. Quaerat provident commodi consectetur veniam similique adearum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabofugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores laboresuscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantiummodi minima sunt esse temporibus sint culpa, recusandae aliquam numquam totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam quasi aliquam eligendi, placeat qui corporis!</string>
+    <string-array name="posts_filter">
+        <item>Posts from this month</item>
+        <item>Posts from last 3 months</item>
+        <item>Posts from last 9 months</item>
+        <item>All Posts</item>
+    </string-array>
+</resources>

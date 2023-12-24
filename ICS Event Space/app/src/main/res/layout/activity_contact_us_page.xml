@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsPage"
+    android:background="@drawable/contact_us_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="70dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/contactUs_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Contact Us"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:shadowColor="@color/transparent"
+                android:shadowDx="4"
+                android:shadowDy="-2"
+                android:shadowRadius="1"
+                />
+
+            <TextView
+                android:id="@+id/well_get_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/contactUs_text"
+                app:layout_constraintStart_toStartOf="@id/contactUs_text"
+                app:layout_constraintEnd_toEndOf="@id/contactUs_text"
+                android:text="We will get back to you, soon"
+                android:textColor="#FAF9F6"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textSize="10sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/receiver_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:boxBackgroundColor="@color/login_field_color"
+                app:boxStrokeColor="#2c64c6"
+                app:boxStrokeWidth="2dp"
+                android:hint="To:"
+                app:hintTextColor="#2c64c6"
+                app:layout_constraintTop_toBottomOf="@id/well_get_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                app:shapeAppearanceOverlay="@style/roundedTextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/receiver_email"
+                    android:layout_width="match_parent"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="none"
+                    android:text="iscscunofficial@gmail.com"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textCursorDrawable="@null"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/subject_input"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                app:boxBackgroundColor="@color/login_field_color"
+                app:boxStrokeColor="#2c64c6"
+                app:boxStrokeWidth="2dp"
+                android:hint="Subject:"
+                app:hintTextColor="#2c64c6"
+                app:layout_constraintTop_toBottomOf="@id/receiver_email_input"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                app:shapeAppearanceOverlay="@style/roundedTextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:imeOptions="actionNext"
+                    android:textSize="13sp"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/field_text_color"
+                    android:textCursorDrawable="@null"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/message_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:boxBackgroundColor="@color/login_field_color"
+                app:boxStrokeColor="#2c64c6"
+                app:boxStrokeWidth="2dp"
+                android:hint="Message:"
+                app:hintTextColor="#2c64c6"
+                app:layout_constraintTop_toBottomOf="@id/subject_input"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                app:shapeAppearanceOverlay="@style/roundedTextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:minHeight="150dp"
+                    android:gravity="top"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:textSize="13sp"
+                    android:textColor="@color/field_text_color"
+                    android:textCursorDrawable="@null"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/message_input"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="110dp"
+                android:layout_marginTop="15dp"
+                android:text="Send"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/send_buttonn_bg"
+                android:textSize="15sp"
+                android:onClick="send_message"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:src="@drawable/white_back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:onClick="backToHome"
+        android:elevation="10dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
