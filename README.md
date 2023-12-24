@@ -8,6 +8,7 @@
 Admin 1:
 
 username: ICS-SC-PRESIDENT
+
 password: adminpass
  
 Admin 2:
