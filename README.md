@@ -6,9 +6,8 @@
 **Admin Accounts:**
 
 Admin 1:
-	
-	username: ICS-SC-PRESIDENT
-	password: adminpass
+username: ICS-SC-PRESIDENT
+password: adminpass
  
 Admin 2:
 	
