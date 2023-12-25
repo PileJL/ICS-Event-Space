@@ -1,4 +1,4 @@
-**An announcement app with cloud database integration**
+# An announcement app with cloud database integration
 
 **Video Demo:**
 	https://www.tiktok.com/@jlpile/video/7257150365127150854
