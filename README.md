@@ -1,5 +1,7 @@
 # An announcement app with cloud database integration
 
+Designed by: https://github.com/rachealpinca
+
 **Video Demo:**
 	https://www.tiktok.com/@jlpile/video/7257150365127150854
 
